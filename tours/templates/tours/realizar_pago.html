@@ -1,0 +1,41 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tours/styles.css' %}">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home_apoderado.html">Inicio</a></li>
+            <li><a href="perfil_apoderado.html">Perfil</a></li>
+            <li><a href="documentos.html">Ver Documentos</a></li>
+            <li><a href="informacion_pagos.html">Información de Pagos</a></li>
+            <li><a href="logout.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    <h1>Realizar Pago</h1>
+    <div class="realizar-pago">
+        <p>Número de pago: <strong>Pago número 4</strong></p>
+        <p>Monto a pagar: <strong>$224.000</strong></p>
+        <form action="procesar_pago.php" method="post">
+            <label for="monto_abonar">Ingrese monto a abonar:</label>
+            <input type="number" id="monto_abonar" name="monto_abonar" required>
+            <label for="medio_pago">Seleccione medio de pago:</label>
+            <select id="medio_pago" name="medio_pago" required>
+                <option value="tarjeta">Tarjetas de crédito o débito</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="mercadopago">Mercadopago</option>
+            </select>
+            <button type="submit" class="boton">Pagar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Agencia OnTour</p>
+    </footer>
+</body>
+</html>

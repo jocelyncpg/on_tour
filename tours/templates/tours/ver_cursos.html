@@ -1,0 +1,38 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tours/styles.css' %}">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ver Cursos</title>
+</head>
+<body>
+    <h1>Lista de Cursos</h1>
+    <h2>Cursos Pendientes</h2>
+    <table>
+        <tr>
+            <th>Nombre del Curso</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <td>Curso 1</td>
+            <td>Pendiente</td>
+            <td>
+                <button onclick="verDocumentos()">Ver Documentos Adjuntos</button>
+                <button onclick="verPagos()">Ver Pagos</button>
+            </td>
+        </tr>
+    </table>
+    <h2>Cursos Saldados</h2>
+    <table>
+        <tr>
+            <th>Nombre del Curso</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>Curso 2</td>
+            <td>Saldado</td>
+        </tr>
+    </table>
+</body>
+</html>

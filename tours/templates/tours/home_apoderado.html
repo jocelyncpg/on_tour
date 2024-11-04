@@ -1,0 +1,29 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tours/styles.css' %}">
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home del Apoderado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenido, Apoderado</h1>
+    <img src="ruta_a_imagen_destino.jpg" alt="Destino del Viaje">
+    <h2>Información Clave</h2>
+    <p>Agencia: On Tour</p>
+    <p>Destino: Playa del Carmen</p>
+    <p>Colegio: Santa María de La Florida</p>
+    <p>Curso: 4to medio A</p>
+    <p>Hijos a Cargo: Juan Pérez, Ana Pérez</p>
+    <p>Total a Pagar: $2.000.000</p>
+    <a href="{% url 'informacion_pagos' %}">Información de Pagos</a>
+
+    <button onclick="window.location.href='documentos.html'">Ver Documentos</button>
+    <footer>
+        <p>&copy; 2024 Agencia OnTour</p>
+    </footer>
+</body>
+</html>

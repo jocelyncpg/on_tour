@@ -1,0 +1,33 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tours/styles.css' %}">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home_apoderado.html">Inicio</a></li>
+            <li><a href="perfil_apoderado.html">Perfil</a></li>
+            <li><a href="informacion_pagos.html">Información de Pagos</a></li>
+            <li><a href="realizar_pago.html">Realizar Nuevo Pago</a></li>
+            <li><a href="logout.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    <h1>Ver Documentos</h1>
+    <div class="documentos">
+        <p>Documentos disponibles para descargar:</p>
+        <ul>
+            <li><a href="documento1.pdf" download>Documento 1</a></li>
+            <li><a href="documento2.pdf" download>Documento 2</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Agencia OnTour</p>
+    </footer>
+</body>
+</html>

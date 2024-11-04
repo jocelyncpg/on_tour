@@ -1,0 +1,23 @@
+<!-- templates/tours/home_apoderado.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'tours/styles.css' %}">
+    <title>Home Apoderado</title>
+</head>
+<body>
+    <h1>Bienvenido al Home Apoderado</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'informacion_pagos' %}">Información de Pagos</a></li>
+            <li><a href="{% url 'perfil_apoderado' %}">Perfil Apoderado</a></li>
+            <li><a href="{% url 'realizar_pago' %}">Realizar Pago</a></li>
+            <li><a href="{% url 'crear_curso' %}">Crear Curso</a></li>
+            <li><a href="{% url 'ver_cursos' %}">Ver Cursos</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

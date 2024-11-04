@@ -1,0 +1,42 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'tours/styles.css' %}">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Pagos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home_apoderado.html">Inicio</a></li>
+            <li><a href="perfil_apoderado.html">Perfil</a></li>
+            <li><a href="documentos.html">Ver Documentos</a></li>
+            <li><a href="realizar_pago.html">Realizar Nuevo Pago</a></li>
+            <li><a href="logout.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    <h1>Información de Pagos</h1>
+    <div class="informacion-pagos">
+        <p>Total a pagar por el curso: <strong>$8.000.000</strong></p>
+        <p>Total individual a pagar por cada alumno: <strong>$224.000</strong></p>
+        <p>Monto total pagado: <strong>$1.600.000</strong></p>
+        <p>Saldo pendiente: <strong>$6.400.000</strong></p>
+        <p>Fecha límite para el pago: <strong>30 de Noviembre 2024</strong></p>
+        <div class="barra-progreso">
+            <label for="progreso">Progreso de pago:</label>
+            <progress id="progreso" value="20" max="100"></progress>
+            <span>20%</span>
+        </div>
+        <div class="botones">
+            <a href="realizar_pago.html" class="boton">Realizar Nuevo Pago</a>
+            <a href="cartola.html" class="boton">Ver Cartola</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Agencia OnTour</p>
+    </footer>
+</body>
+</html>
